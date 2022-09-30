@@ -1,0 +1,100 @@
+:root {
+    --pink: rgb(245, 111, 118);
+    --blue: rgb(71, 71, 80);
+    --grey: rgb(161, 160, 167);
+    --light-blue: rgb(212, 212, 228);
+}
+section {
+    border: 3px solid whitesmoke;
+    margin: 5px rgb(197, 188, 188);
+    width: 50vw;
+    height: 90vh;
+}
+div {
+   border: 1px solid var(--grey);
+   margin: 0;
+   padding: 25px;
+   text-align: center;
+   font-family: Calibri; 
+   font-size: 30px;
+   color: rgb(65, 63, 63);
+} 
+.grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    grid-template-rows: 75px 100px 100px 100px 100px 100px;
+    grid-template-areas: 
+    "answer answer answer answer"
+    "plus minus times divide"
+    "seven eight nine equal"
+    "four five six equal"
+    "one two three equal"
+    "zero period ac equal"; 
+}
+#answer {
+    grid-area: answer;
+    background-color: var(--blue);
+    color: white;
+    text-align: right;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+#plus {
+    grid-area: plus;
+    background-color: var(--light-blue);
+}
+#minus {
+    grid-area: minus;
+    background-color: var(--light-blue);
+}
+#times {
+    grid-area: times;
+    background-color: var(--light-blue);
+}
+#one {
+    grid-area: one;
+}
+#two {
+    grid-area: two;
+}
+#three {
+    grid-area: three;
+}
+#four {
+    grid-area: four;
+}
+#five {
+    grid-area: five;
+}
+#six {
+    grid-area: six;
+}
+#seven {
+    grid-area: seven;
+}
+#eight {
+    grid-area: eight;
+}
+#nine {
+    grid-area: nine;
+}
+#zero {
+    grid-area: zero;
+    border-bottom-left-radius: 10px;
+}
+#period {
+    grid-area: period;
+}
+#ac {
+    grid-area: ac;
+}
+#equal {
+    grid-area: equal;
+    background-color: var(--pink);
+    padding-top: 175px;
+    border-bottom-right-radius: 10px;
+}
+#divide {
+    grid-area: divide;
+    background-color: var(--light-blue);
+}
